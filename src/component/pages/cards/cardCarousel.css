@@ -1,0 +1,117 @@
+/* General Container Styling */
+.card-carousel-container {
+  background-color: white; /* Light background to contrast the cards */
+  padding: 2rem 0;
+  ; /* Ensures the container takes at least full screen height */
+}
+
+/* Card Styling */
+.card-carousel-card {
+  background: #9411a5; /* White card background */
+  border: 1px solid #e0e0e0; /* Light border for distinction */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 1rem; /* Space between cards */
+  height: 60vh; /* Ensures consistent height */
+  max-width: 90%;
+  display: flex; /* Flexbox to keep everything aligned */
+  flex-direction: column; /* Ensure content is stacked vertically */
+}
+
+/* Card Hover Effect */
+.card-carousel-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.card-carousel-image-container {
+  height: 50%; /* Images take up half the card height */
+  background: #f0f0f0; /* Light gray background as a fallback */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0; /* Separates image from content */
+  overflow: hidden;
+}
+
+/* Image Styling */
+.card-carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image scales nicely */
+  border-radius: 12px 12px 0 0; /* Rounds top corners of image */
+}
+
+/* Content Section */
+.card-carousel-content {
+  padding: 1rem; /* Space around the content */
+  text-align: center; /* Center align text */
+  flex-grow: 1; /* Ensures the content section takes available space */
+}
+
+/* Heading Styling */
+.card-carousel-heading {
+  font-size: 1.2rem; /* Slightly larger font */
+  color: white; /* Dark gray for better readability */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Description Styling */
+.card-carousel-description {
+  font-size: 0.9rem;
+  color:white; /* Medium gray for less emphasis */
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Button Styling */
+.card-carousel-button {
+  background-color: #007bff; /* Primary blue button */
+  color: #ffffff; /* White text */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-carousel-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+/* Slider Adjustments */
+.slick-slide {
+  margin: 0 10px; /* Adds consistent gap between cards */
+  margin-bottom: 0 !important; /* Ensures no bottom margin */
+  height: 100%; /* Ensures all slides take full height */
+}
+
+.slick-dots li button:before {
+  color: #007bff; /* Blue dots for navigation */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff; /* Blue arrows for navigation */
+}
+
+.slick-list {
+  padding: 0 !important; /* Remove padding from the list */
+  margin: 0 !important; /* Remove margin from the list */
+}
+.slick-track {
+  position: relative; 
+  top: 0;
+  left: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  
+}

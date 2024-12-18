@@ -1,16 +1,18 @@
 import React from "react";
 import Slider from "../slider/Slider";
 import "./Home.css";
-import CardCarousel from "../cards/Cards";
+import CardCarousel from "../cards/CardCarousel";
+
 
 // Data for the cards
 const Home = () => {
   return (
+    <div className="body">
     <div className="main">
       <div className="home">
-        <Slider />
+        <Slider/>
         <div className="card">
-          <CardCarousel />
+        <CardCarousel/>
         </div>
         
          
@@ -57,9 +59,122 @@ const Home = () => {
               </div>
             </div>
           </div>
-          hello world
+          <div className="maindiv">
+            <div className="div1"><h2> Why vincentio</h2></div>
+            <div className="subdiv">
+              <div className="div2"> <div className="div22">
+                Manage kubernates</div>
+                Deploy your Virtual Machine cluster in seconds and automate software deployment, scaling, and management.
+             
+              </div>
+            <div className="div3"><div className="div22">Green Cloud</div> 
+            All of our infrastructure is 100% powered by renewable energy within our Data Centres in Europe and North America, and runs at peak efficiency
+              
+            </div>
+            <div className="div4"> <div className="div22">Networking</div>
+            Designed to handle high-demand workloads in a faster, 75% more cost-effective manner compared to legacy public cloud providers.
+            </div>
+            
+            </div>
+            <div className="butt"> <button className="learn">Learn more</button></div>
+
+           
+          </div>
+      <div className="table">
+      <div class="gpu-grd-pricing_first">
+     
       
+      
+     <div class="gpugpf-box-table">
+     <table id="tblSortTest_jquery" class="sort-test-jquery">
+       <thead>
+         <tr>
+           <th>GPU Model <i class="fa fa-fw fa-sort"></i></th>
+           <th>VRAM <i class="fa fa-fw fa-sort"></i><span>(GB)</span></th>
+           <th>Max pCPUs <i class="fa fa-fw fa-sort"></i> <span>per GPU</span> </th>
+           <th>Max RAM (GB) <i class="fa fa-fw fa-sort"></i><span>per GPU</span> </th>
+           <th>Pricing Per <i class="fa fa-fw fa-sort"></i><span>Hour</span> </th>
+           <th>Reservation <i class="fa fa-fw fa-sort"></i><span>Pricing</span> </th>
+         </tr>
+       </thead>
+       <tbody>
+         
+         <tr>
+           <td>NVIDIA H100 SXM 80GB</td>
+           <td>80</td>
+           <td>24</td>
+           <td>240</td>
+           <td>$ 3.00 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-hgx-sxm5-h100-reserve-now?hsLang=en">$2.10/hour</a></td>
+         </tr>
+          
+         <tr>
+           <td>NVIDIA H100 PCIe NVLink 80GB</td>
+           <td>80</td>
+           <td>31</td>
+           <td>180</td>
+           <td>$ 1.95 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-h100-pcie-reserve-now?hsLang=en">$1.37/hour</a></td>
+         </tr>
+          
+         <tr>
+           <td>NVIDIA H100 PCIe 80GB</td>
+           <td>80</td>
+           <td>28</td>
+           <td>180</td>
+           <td>$ 1.90 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-h100-pcie-reserve-now?hsLang=en">$1.33/hour</a></td>
+         </tr>
+          
+         <tr>
+           <td>NVIDIA A100 80GB PCIe NVLink</td>
+           <td>80</td>
+           <td>31</td>
+           <td>240</td>
+           <td>$ 1.40 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-a100-reserve-now?hsLang=en">$0.98/hour</a></td>
+         </tr>
+          
+         <tr>
+           <td>NVIDIA A100 PCIe 80GB</td>
+           <td>80</td>
+           <td>28</td>
+           <td>120</td>
+           <td>$ 1.35 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-a100-reserve-now?hsLang=en">$0.95/hour</a></td>
+         </tr>
+          
+         <tr>
+           <td>NVIDIA L40</td>
+           <td>48</td>
+           <td>28</td>
+           <td>58</td>
+           <td>$ 1.00 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-l40-reserve-now?hsLang=en">$0.70/hour</a></td>
+         </tr>
+          
+         <tr>
+           <td>NVIDIA RTX A6000/A40</td>
+           <td>48</td>
+           <td>28</td>
+           <td>58</td>
+           <td>$ 0.50 per Hour</td>
+           <td>Starts from <a href="https://www.hyperstack.cloud/nvidia-rtx-a6000-reserve-now?hsLang=en">$0.35/hour</a></td>
+         </tr>
+          
+
+         
+       </tbody>
+     </table>
+     </div>
+     
+
+     
+   </div>
+   
       </div>
+      </div>
+    </div>
     </div>
   );
 };

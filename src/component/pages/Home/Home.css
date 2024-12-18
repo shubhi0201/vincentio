@@ -1,25 +1,214 @@
-.home{
-    color: white;
-    max-height: fit-content;
-}
-.main{
-    background-color: black;
-    color: white;
+.body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-  .card {
-    margin-bottom: 20px; /* Adds space between rows */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   
-    margin-top: 5vh;
-    background-color: rgb(108, 11, 132);
-    color: aliceblue;
+.home {
+  color: white;
+  max-height: fit-content;
+}
+
+.main {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  margin-bottom: 20px; /* Adds space between rows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 5vh;
+  background-color: rgb(108, 11, 132);
+  color: aliceblue;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-row {
+  margin-right: 20px; /* Ensure no gap between cards in the same row */
+}
+
+.maindiv {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: inline-block;
+}
+
+.div1 {
+  color: #e4e6ea;
+  font-family: Cairo;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 52px;
+  margin: 24px 0;
+}
+
+.subdiv {
+  display: flex;
+}
+
+.div2,
+.div3,
+.div4 {
+  background-color: #363636;
+  border-radius: 10px;
+  color: #fff;
+  flex: 1;
+  margin-right: 25px;
+  padding: 32px;
+}
+
+.div22 {
+  color: #9233e9;
+  font-family: Cairo;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.learn {
+  background-color: #9233e9;
+  border: 1px solid #9233e9;
+  color: #fff;
+  display: flex;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.butt {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 5vh;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .subdiv {
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items in smaller viewports */
   }
+
+  .div2,
+  .div3,
+  .div4 {
+    max-width: 45%; /* Reduce size for better fit */
+    margin-bottom: 20px; /* Add space between rows */
+  }
+
+  .butt {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .subdiv {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+  }
+
+  .div2,
+  .div3,
+  .div4 {
+    max-width: 90%; /* Take most of the screen width */
+    margin-right: 0; /* Reset margin for stacking */
+  }
+}
+
+@media (max-width: 480px) {
+  .div1 {
+    font-size: 20px; /* Reduce title size */
+    line-height: 32px;
+    text-align: center; /* Center text */
+  }
+}
+.table{
+ padding: 10vh;
   
-  .card:hover {
-    transform: scale(1.05);
+}
+/* Table Container Styling */
+.gpugpf-box-table {
+  margin: 20px auto; /* Center the table with some margin */
+  max-width: 100%; /* Ensure table is responsive */
+  padding: 20px;
+  background-color: #fff; /* Set the background color to white for the table container */
+  border-radius: 10px; /* Rounded corners for the table container */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+}
+
+/* Table Styling */
+.sort-test-jquery {
+  width: 100%; /* Ensure the table takes full width */
+  border-collapse: collapse; /* Remove spacing between table cells */
+  text-align: center; /* Center-align text */
+  border: 1px solid #ddd; /* Light border around the entire table */
+}
+
+/* Table Header Styling */
+.sort-test-jquery thead {
+  background-color: #f4f4f4; /* Light gray background for the header */
+}
+
+.sort-test-jquery th {
+  padding: 12px 20px; /* Add some padding inside table header */
+  border: 1px solid #ddd; /* Light border around each header cell */
+  text-transform: uppercase; /* Uppercase letters for header */
+  font-weight: bold; /* Bold text in the header */
+  color: #333; /* Darker text for better readability */
+}
+
+.sort-test-jquery th i {
+  cursor: pointer; /* Change cursor on sort icon */
+  margin-left: 10px;
+}
+
+/* Table Body Styling */
+.sort-test-jquery tbody td {
+  padding: 12px 20px; /* Add padding to table cells */
+  border: 1px solid #ddd; /* Light border for each cell */
+  color: #555; /* Slightly lighter color for the body text */
+}
+
+/* Links in Table */
+.sort-test-jquery tbody td a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.sort-test-jquery tbody td a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Row Hover Effect */
+.sort-test-jquery tbody tr:hover {
+  background-color: #f9f9f9; /* Light gray background on row hover */
+}
+
+/* Pricing & VRAM Column Styling */
+.sort-test-jquery tbody td:nth-child(2),
+.sort-test-jquery tbody td:nth-child(3),
+.sort-test-jquery tbody td:nth-child(4),
+.sort-test-jquery tbody td:nth-child(5),
+.sort-test-jquery tbody td:nth-child(6) {
+  font-size: 15px; /* Uniform font size for the cells */
+}
+
+/* Responsive Table Adjustments */
+@media screen and (max-width: 768px) {
+  .sort-test-jquery th, .sort-test-jquery td {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
   }
-  
-  .card-row {
-    margin-right: 20px; /* Ensure no gap between cards in the same row */
-  }
+}
