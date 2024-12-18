@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .nav1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-left: 0;
+  }
+  
+  .nav1 .Link1 {
+    display: none;
+  }
+  
+  .nav1 a {
+    color: rgb(1, 69, 133);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  
+  .nav1 .btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav1 .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  .nav2{
+    margin-left: 70vh;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+  .nav1 {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:white;
+    position: absolute;
+
+    top: 90px;
+    left: 0;
+    width: auto;
+    border-radius:0 0 8px  8px;
+    z-index: 10;
+    
+    
+  }
+
+  .nav1.open {
+    display: flex;
+  
+  }
+
+  .hamburger {
+    display: block;
+    margin: 0%;
+  }
+}
+main {
+    padding-top: 70px; /* Add space to prevent overlap with the fixed navbar */
+    position: relative;
+  }
