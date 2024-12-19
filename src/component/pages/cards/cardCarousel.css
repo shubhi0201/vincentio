@@ -1,118 +1,134 @@
 /* General Container Styling */
-.card-carousel-container {
-  background-color: white; /* Light background to contrast the cards */
-  padding: 2rem 0;
-  ; /* Ensures the container takes at least full screen height */
+.custom-card-carousel-wrapper {
+  background-color: white;
+  padding: 3rem 0;
+ position: relative;
+  
+}
+
+.custom-container-box {
+  background-color: #f7f7f7;
+  width: 100%;
+  margin-top: -3rem;
 }
 
 /* Card Styling */
-.card-carousel-card {
-  background: #9411a5; /* White card background */
-  border: 1px solid #e0e0e0; /* Light border for distinction */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  overflow: hidden; /* Prevent content overflow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0 1rem; /* Space between cards */
-  height: 60vh; /* Ensures consistent height */
+.custom-carousel-card {
+  background: #1366ae;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 6%;;
+  
+  height: 80vh;
   max-width: 90%;
-  display: flex; /* Flexbox to keep everything aligned */
-  flex-direction: column; /* Ensure content is stacked vertically */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Card Hover Effect */
-.card-carousel-card:hover {
-  transform: scale(1.05); /* Slightly enlarge the card on hover */
+.custom-carousel-card:hover {
+  transform: scale(1.02);
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Image Container */
-.card-carousel-image-container {
-  height: 50%; /* Images take up half the card height */
-  background: #f0f0f0; /* Light gray background as a fallback */
+.custom-carousel-image-container {
+  height: 50%;
+  background: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0; /* Separates image from content */
-  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-/* Image Styling */
-.card-carousel-image {
+.custom-carousel-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures image scales nicely */
-  border-radius: 12px 12px 0 0; /* Rounds top corners of image */
+  height:40vh;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  
+  
 }
 
 /* Content Section */
-.card-carousel-content {
-  padding: 1rem; /* Space around the content */
-  text-align: center; /* Center align text */
-  flex-grow: 1; /* Ensures the content section takes available space */
+.custom-carousel-content {
+  padding: 2rem;
+  text-align: center;
+  flex-grow: 1;
 }
 
-/* Heading Styling */
-.card-carousel-heading {
-  font-size: 1.2rem; /* Slightly larger font */
-  color: white; /* Dark gray for better readability */
+.custom-carousel-heading {
+  font-size: 2rem;
+  color: white;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-/* Description Styling */
-.card-carousel-description {
-  font-size: 0.9rem;
-  color:white; /* Medium gray for less emphasis */
+.custom-carousel-description {
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
   margin-bottom: 1rem;
-  line-height: 1.4;
+  line-height:1.2;
 }
 
-/* Button Styling */
-.card-carousel-button {
-  background-color: #007bff; /* Primary blue button */
-  color: #ffffff; /* White text */
+.custom-carousel-button {
+  background-color: white;
+  color: blue;
+  margin-top: 3rem;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.card-carousel-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: translateY(-3px); /* Subtle lift on hover */
+.custom-carousel-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
 }
 
+.slick-prev {
+  margin-left: 6vh;
+  z-index: 999 !important;
+  height: 2vh !important;
+  
+
+}
+.slick-prev:before, .slick-next:before {
+  color: grey !important;
+  height: 10vh !important;
+  font-size: 40px !important;
+  
+}
+
+.slick-next {
+  margin-right: 6vh;
+  
+}
 /* Slider Adjustments */
 .slick-slide {
-  margin: 0 10px; /* Adds consistent gap between cards */
-  margin-bottom: 0 !important; /* Ensures no bottom margin */
-  height: 100%; /* Ensures all slides take full height */
+  margin: 0 10px;
+  height: 100%;
 }
 
 .slick-dots li button:before {
-  color: #007bff; /* Blue dots for navigation */
+  color: #007bff;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: #007bff; /* Blue arrows for navigation */
-}
+
 
 .slick-list {
-  padding: 0 !important; /* Remove padding from the list */
-  margin: 0 !important; /* Remove margin from the list */
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
 }
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex !important;
-    margin-bottom: 0% !important;
-    margin-left: auto;
-    margin-right: auto;
+.slick-track {
+  display: flex !important;
+  margin-bottom: 0% !important;
+  margin-left: auto;
+  margin-right: auto;
 }

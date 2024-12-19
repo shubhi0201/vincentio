@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./slider.css"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import images1 from "./images1.jpg";
 import image2 from "./image2.jpg";
 import image3 from "./image3.jpg";
+
 const slides = [
   {
     image: images1,
     title: "Mumbai: The Way of Water",
-    subTitle:
-      "Welcome to Mumbai"
+    subTitle: "Welcome to Mumbai",
   },
   {
     image: image2,
@@ -28,43 +29,43 @@ const slides = [
   },
 ];
 
-function Slider({ slides }) {
-  const [index, setIndex] = useState(0);
+function App() {
+  const [oldSlide, setOldSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    console.log("Selected index: ", selectedIndex);
-    setIndex(selectedIndex);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Time in ms between slides
+    beforeChange: (current, next) => {
+      setOldSlide(current);
+      setActiveSlide(next);
+    },
   };
 
   return (
-    <Carousel
-      activeIndex={index}
-      onSelect={handleSelect}
-      nextIcon={<span aria-hidden="true" className="carousel-control-next-icon changed" />}
-      prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon changed" />}
-    >
-      {slides.map((slide, idx) => (
-        <Carousel.Item key={idx} interval={slide.interval}>
-          <img
-            className="d-block w-100"
-            src={slide.image}
-            alt={slide.title || `Slide ${idx + 1}`}
-          />
-          <Carousel.Caption>
-            <h3>{slide.title}</h3>
-            <p>{slide.subTitle}</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
-  );
-}
-
-
-function App() {
-  return (
-    <div className="slider">
-      <Slider slides={slides} />
+    <div className="slider-container"style={{margin:0, backgroundColor:"white"}}>
+    
+      <Slider {...settings}>
+        {slides.map((slide, idx) => (
+          <div key={idx} className="slide-item">
+            <img
+              src={slide.image}
+              alt={slide.title || `Slide ${idx + 1}`}
+              className="slide-image"
+              style={{ minWidth: "100%", maxHeight: 400 }}
+            />
+            {/* <div className="slide-caption"style={{}}>
+              <h3>{slide.title}</h3>
+              <p>{slide.subTitle}</p>
+            </div> */}
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }

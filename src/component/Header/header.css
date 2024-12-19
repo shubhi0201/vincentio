@@ -6,11 +6,14 @@ body {
   }
   
   header, footer {
-    background-color: #333;
+    background-color: rgb(20, 224, 227);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    padding-bottom: 0%;
+    
   }
+  
   
   .nav1 {
     display: flex;
@@ -18,9 +21,10 @@ body {
     gap: 1.5rem;
     background-color: white;
     padding: 1rem;
-    border-radius: 8px;
-    margin-left: 0;
+    
+   margin: 0%;
   }
+  
   
   .nav1 .Link1 {
     display: none;
@@ -109,4 +113,9 @@ body {
 main {
     padding-top: 70px; /* Add space to prevent overlap with the fixed navbar */
     position: relative;
+  }
+  @media (max-width: 860px) {
+    .btn {
+      display: none;
+    }
   }

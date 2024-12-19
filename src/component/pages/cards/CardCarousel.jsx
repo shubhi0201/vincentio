@@ -55,32 +55,33 @@ function CardCarousel() {
   ];
 
   return (
-    <div className="card-carousel-container">
-      <div className="w-3/4 m-auto">
+    
+    <div className="custom-container-box">
+    <div className="custom-card-carousel-wrapper">
+      <div className="custom-carousel-width">
         <Slider {...settings}>
           {images.map((item) => (
-            <div key={item.heading} className="card-carousel-card">
-              {/* Image Section */}
-              <div className="card-carousel-image-container">
+            <div key={item.heading} className="custom-carousel-card">
+              <div className="custom-carousel-image-container">
                 <img
                   src={item.src}
                   alt={item.heading}
-                  className="card-carousel-image"
+                  className="custom-carousel-image"
                 />
               </div>
-
-              {/* Content Section */}
-              <div className="card-carousel-content">
-                <h5 className="card-carousel-heading">{item.heading}</h5>
-                <p className="card-carousel-description">{item.description}</p>
-                <button className="card-carousel-button">Learn More</button>
+              <div className="custom-carousel-content">
+                <h5 className="custom-carousel-heading">{item.heading}</h5>
+                <p className="custom-carousel-description">{item.description}</p>
+                <button className="custom-carousel-button">Learn More</button>
               </div>
             </div>
           ))}
         </Slider>
       </div>
     </div>
-  );
+  </div>
+);
+
 }
 
 export default CardCarousel;

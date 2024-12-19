@@ -8,9 +8,10 @@
 .home {
   color: white;
   max-height: fit-content;
+  
 }
 
-.main {
+.main1 {
   background-color: black;
   color: white;
 }
@@ -29,6 +30,10 @@
 
 .card-row {
   margin-right: 20px; /* Ensure no gap between cards in the same row */
+}
+.separator__keyword{
+  font-size: 24px;
+    font-weight: 700;
 }
 
 .maindiv {
@@ -62,7 +67,7 @@
 }
 
 .div22 {
-  color: #9233e9;
+  color: skyblue;
   font-family: Cairo;
   font-size: 28px;
   font-weight: 700;
@@ -72,12 +77,12 @@
 }
 
 .learn {
-  background-color: #9233e9;
-  border: 1px solid #9233e9;
-  color: #fff;
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  color: black;
   display: flex;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
