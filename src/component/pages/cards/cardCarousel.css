@@ -105,13 +105,14 @@
   padding: 0 !important; /* Remove padding from the list */
   margin: 0 !important; /* Remove margin from the list */
 }
-.slick-track {
-  position: relative; 
-  top: 0;
-  left: 0;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0%;
-  
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex !important;
+    margin-bottom: 0% !important;
+    margin-left: auto;
+    margin-right: auto;
 }
