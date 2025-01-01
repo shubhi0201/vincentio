@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Importing React and useState for managing state
 import { Link } from "react-router-dom"; // Importing Link from react-router-dom for navigation
 import "./header.css"; // Importing the CSS file for styling
-import logo from './vincentiologo.png'; // Importing the logo image
+import logo from './vincentiotech.jpg'; // Importing the logo image
 
 // Header component to render the navigation bar
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
       <nav className={`nav1 ${isMenuOpen ? "open" : ""}`}>
         {/* Logo with a link to the home page */}
         <Link to="/">
-          <img src={logo} height="40px" alt="Logo" />
+          <img src={logo}  height="60px" alt="Logo" />
         </Link>
 
         {/* Navigation links */}
@@ -27,7 +27,7 @@ const Header = () => {
         <Link className="Link2" to="/About" style={{ fontSize: 20, fontWeight: 400 }}>
           Why Vincentio
         </Link>
-        <Link className="Link3" to="/About" style={{ fontSize: 20, fontWeight: 400 }}>
+        <Link className="Link3" to="/Gpupricing" style={{ fontSize: 20, fontWeight: 400 }}>
           GPU Pricing
         </Link>
         <Link className="Link4" to="/About" style={{ fontSize: 20, fontWeight: 400 }}>
@@ -39,7 +39,7 @@ const Header = () => {
         <Link className="Link7" to="/About" style={{ fontSize: 20, fontWeight: 400 }}>
           Careers
         </Link>
-        <Link className="Link8" to="/About" style={{ fontSize: 20, fontWeight: 400 }}>
+        <Link className="Link8" to="/Contact" style={{ fontSize: 20, fontWeight: 400 }}>
           Contact
         </Link>
 

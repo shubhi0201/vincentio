@@ -66,6 +66,11 @@ function App() {
           </div>
         ))}
       </Slider>
+      <div style={{ textAlign: "center", marginTop: 0 }}>
+        <p>
+          Previous Slide: {oldSlide}, Current Slide: {activeSlide}
+        </p>
+      </div>
     </div>
   );
 }
